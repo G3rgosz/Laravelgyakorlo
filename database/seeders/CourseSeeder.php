@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use DB;
 
-class StudentSeeder extends Seeder
+class CourseSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,12 +15,10 @@ class StudentSeeder extends Seeder
      */
     public function run()
     {
-        $faker = \Faker\Factory::create();
-
-        DB::table("students")->insert([
-            "name" => $faker->name,
-            "email" => $faker->safeEmail,
-            "phone" => $faker->phoneNumber
+        DB::table("courses")->insert([
+            "course" => "Java",
+            "price" => 120000,
+            "student_id" => 82
         ]);
     }
 }

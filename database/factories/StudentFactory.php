@@ -19,14 +19,7 @@ class StudentFactory extends Factory
         return [
             "name" => $this->faker->name,
             "email" => $this->faker->safeEmail,
-            "phone" => $this->faker->phoneNumber,
-            "age" => $this->faker->numberBetween(25-45),
-            "gender" => $this->faker->randomElement([
-                "male",
-                "female",
-                "other"
-            ]),
-            "address" => $this->faker->address
+            "phone" => $this->faker->phoneNumber
         ];
     }
 }
