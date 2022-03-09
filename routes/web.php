@@ -30,3 +30,4 @@ use App\Http\Controllers\StudentController;
 Route::get("/join1", [StudentController::class, "joinStudent1"]);
 Route::get("/join2", [StudentController::class, "joinStudent2"]);
 Route::get("/join3", [StudentController::class, "joinStudent3"]);
+Route::get("/insert", [StudentController::class, "insertStudent"]);
